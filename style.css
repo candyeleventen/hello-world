@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  body {
+    align-items: center;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+  }
+    
+  h1 {
+    -webkit-animation: parallax 10s linear infinite;
+            animation: parallax 10s linear infinite;
+    background-image: url("https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmluYXJ5fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60");
+    -webkit-background-clip: text;
+            background-clip: text;
+    background-size: 600px;
+    font-size: min(10em, 20vw);
+    line-height: 1.5;
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 3px rgb(7, 7, 7);
+  }
+  
+  @-webkit-keyframes parallax {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 500px -1000px;
+    }
+  }
+  
+  @keyframes parallax {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 500px -1000px;
+    }
+  }
